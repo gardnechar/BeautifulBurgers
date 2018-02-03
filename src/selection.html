@@ -1,0 +1,143 @@
+<html>
+	<link rel="stylesheet" href="style.css">
+	
+	<head>
+
+		<title>Selection | Beautiful Burgers</title>
+
+		<meta charset="UTF-8" />			    
+		<meta name="description" content="Beautiful Burgers is a takeaway bar with a focus on sustainably sourced ingredients, fresh local produce and amazing flavour combinations. Try us Today!">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+		<link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+
+	<body class="home page-template-default page page-id-20" data-gr-c-s-loaded="true" style="zoom: 1;">
+
+		<div class="wrap">
+
+			<section class="header">
+				<div class="menu-outer">
+					<a href="index.html"><img id="logo" src="img/logo.png"></a>
+					<div class= "table">
+
+						<ul id="horizontal-list">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="menu.html">Menu</a></li>
+							<li><a href="order.html">Order</a></li>
+							<li><a href="careers.html">Careers</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="intro-copy inner-700 center">
+					<h1>Burger</h1>
+				</div>	
+			</section>
+
+			<section class="layer bg-white section-header cta" id="layer_1">
+				<div class="inner pad-top-60 pad-bot-60">
+					<div class="section-head center ">
+						<h2>Build your burger</h2>
+						<p>Build your burger by clicking on the ingrediants below. When you are happy with your burger creation click 'Place Order' to send to the kitchen or 'Add to Order' to save your burger and start creating a new burger too add to your order.</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="layer bg-white full-wdith" id="layer_1">
+				<div class="alternating inner pad-top-60 pad-bot-60">
+					<div class="grid column-2 clearfix nosetheight" id="alternating_layer_0">
+						<div class="col">
+							<div class="content" id="selection">
+								<h4>Select your bun</h4>
+								<ul id="bun" class="icon inline">
+									<li><input type="image" src="img/plainBun.png" price="2" title="Plain Bun" id="plainbun" onClick="add_ingrediant(this.id)" /></li>
+									<li><input type="image" src="img/seedBun.png" price="2" title="Seed Bun" id="seedbun" onClick="add_ingrediant(this.id)" /></li>
+									<li><input type="image" src="img/brownBun.png" price="2" title="Brown Bun" id="brownbun" onClick="add_ingrediant(this.id)" /></li>
+								</ul>
+								<br />
+								<h4>Select your meat</h4>
+								<ul id="meat" class="icon inline">
+									<li><input type="image" src="img/beef.png" price="1" title="Beef" id="beef" onClick="add_ingrediant(this.id)" /></li>
+									<li><input type="image" src="img/chicken.png" price="1" title="Chicken" id="chicken" onClick="add_ingrediant(this.id)"/></li>
+									<li><input type="image" src="img/fish.png" price="1" title="Fish" id="fish" onClick="add_ingrediant(this.id)" /></li>
+									<li><input type="image" src="img/vegetarian.png" price="1" title="Vegetarian" id="vegetarian" onClick="add_ingrediant(this.id)" /></li>
+								</ul>
+								<br />
+								<h4>Select your filling</h4>
+								<ul id="filling" class="icon inline">
+									<li><input type="image" src="img/lettuce.png" price="1" title="Lettuce" id="lettuce" onClick="add_ingrediant(this.id)" /></li>
+									<li><input type="image" src="img/tomato.png" price="1" title="Tomato" id="tomato" onClick="add_ingrediant(this.id)" /></li>
+									<li><input type="image" src="img/avocado.png" price="1" title="Avocado" id="avocado" onClick="add_ingrediant(this.id)" /></li>
+									<li><input type="image" src="img/carrot.png" price="1" title="Carrot" id="carrot" onClick="add_ingrediant(this.id)" /></li>
+									<li><input type="image" src="img/bacon.png" price="1" title="Bacon" id="bacon" onClick="add_ingrediant(this.id)" /></li>
+								</ul>
+								<br />
+								<h4>Select your sauce</h4>
+								<ul id="sauce" class="icon inline">
+									<li><input type="image" src="img/mayo.png" price="1" title="Mayo Sauce" id="mayosauce" onClick="add_ingrediant(this.id)" /></li>
+									<li><input type="image" src="img/bbq.png" price="1" title="BBQ Sauce" id="bbqsauce" onClick="add_ingrediant(this.id)" /></li>
+									<li><input type="image" src="img/tomatoSauce.png" price="1" title="Tomato Sauce" id="tomatosauce" onClick="add_ingrediant(this.id)" /></li>
+									<li><input type="image" src="img/aioli.png" price="1" title="Aioli Sauce" id="aiolisauce" onClick="add_ingrediant(this.id)" /></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col bg-grey">
+							<div class="content">
+								<h3>Order details</h3>
+								<ul id="list"></ul>
+								<div>
+									<p><Strong>Burgers saved: </Strong><strong id="pending">0</strong></p> 
+									<ul id="list2"></ul>
+									<hr>
+									<p><Strong>Total: $</Strong><strong id="price"></strong></p>
+									<hr>
+								</div>
+								<div class="button-group" id="orderButtons"> 
+									<a onclick="addToOrder()" id="addToOrder" class="button bg-red">Add to Order</a>
+									<a onclick="placeOrder()" id="placeOrder" class="button">Place Order</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer class="layer bg-blue dark footer">
+				<div class="inner pad-top-60 pad-bot-60 ">
+					<div class="grid column-1">
+						<div class="col">
+							<p>
+								<span class="footer-heading"><strong>CONTACT US:</strong></span>
+								<span class="block"><span class="green">P <a href="tel:06 873 9199"></span>06 873 9199</span></a><span class="sep"><span class="block">&nbsp;|</span></span> <span class="block"><span class="green">E </span><a href="mailto:sales@beautifulburgers.co.nz"><span style="font-weight: 400;">sales@beautifulburgers.co.nz</span></a></span>&nbsp;<span class="sep">| 99 Rintoul St, Newtown, Wellington 6021</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+			
+		</div>
+		
+	</body>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="jquery.min.js"></script>
+
+</html>
